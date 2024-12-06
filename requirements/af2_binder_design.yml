@@ -1,0 +1,21 @@
+name: af2_binder_design
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - biopython
+  - ml-collections
+  - ml_dtypes
+  - tensorflow
+  - pip
+  - pyrosetta
+  - mock
+  - pip:
+    - --find-links https://storage.googleapis.com/jax-releases/jax_cuda_releases.html 
+    - jax[cuda12_pip]==0.4.20
+    - jaxlib
+    - dm-haiku
+    - dm-tree
