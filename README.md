@@ -26,6 +26,7 @@ This repository contains a comprehensive pipeline for designing binders targetin
     conda env create -f requirements/esmfold.yml
     conda env create -f requirements/SE3nv.yml
 
+
 ## 🚀 Running the Pipeline
 
 1. Place your input PDB file (e.g., egfr_complete.pdb) in the inputs/ directory.
@@ -40,6 +41,26 @@ This repository contains a comprehensive pipeline for designing binders targetin
 The following scripts have been modified from the original repositories:
 - `predict2.py`: Modified to include additional metrics (PAE, TM-scores).
 - `confidence.py`: Revised to support the extended metrics.
+
+## 💡 BioNeMo Pipeline
+
+The `bionemo_pipeline.py` script enables binder generation, linker integration, structure prediction, and evaluation using NVIDIA's BioNeMo Cloud.
+
+### Install BioNeMo Dependencies
+  To run the BioNeMo pipeline, install the dependencies:
+  ```bash
+  pip install -r requirements/bionemo_requirements.txt
+```
+
+
+### Running the BioNeMo Pipeline
+1. Ensure you have an active BioNeMo API key. Replace `api_key='your_api_key'` in the script.
+2. Run the pipeline:
+   ```bash
+   python bionemo_pipeline/bionemo_pipeline.py
+3. The output, including final binders, will be saved as a JSON file:
+   ```bash
+   final_top_binders.json
 
 ## 📖 References
 
