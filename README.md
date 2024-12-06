@@ -1,5 +1,23 @@
 # EGFR Binder Design Pipeline
 
+
+## 📑 Table of Contents
+
+- [Overview](#-overview)
+- [Features](#️-features)
+- [Setup Instructions](#️-setup-instructions)
+- [Running the Pipeline](#-running-the-pipeline)
+- [Notes on Revised Scripts](#-notes-on-revised-scripts)
+- [BioNeMo Pipeline](#-bionemo-pipeline)
+  - [Install BioNeMo Dependencies](#install-bionemo-dependencies)
+  - [Running the BioNeMo Pipeline](#running-the-bionemo-pipeline)
+- [Docker Support](#-docker-support)
+  - [Build and Run the Docker Image](#build-and-run-the-docker-image)
+- [References](#-references)
+- [License](#-license)
+
+
+
 ## 🧬 Overview
 
 This repository contains a comprehensive pipeline for designing binders targeting the EGFR protein using advanced tools such as RFdiffusion, ProteinMPNN, AlphaFold2, and ESM2. The workflow includes backbone generation, sequence design, structure prediction, and ranking based on key binding metrics.
