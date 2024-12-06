@@ -30,7 +30,8 @@ This repository contains a comprehensive pipeline for designing binders targetin
 
 1. Place your input PDB file (e.g., egfr_complete.pdb) in the inputs/ directory.
 2. Launch the pipeline using:
-   ```bash workflows/launch_parallel_pipelines.sh
+   ```bash
+   workflows/launch_parallel_pipelines.sh
 
 3. Outputs will be saved in the outputs/ directory.
 
