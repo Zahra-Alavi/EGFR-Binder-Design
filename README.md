@@ -62,6 +62,20 @@ The `bionemo_pipeline.py` script enables binder generation, linker integration, 
    ```bash
    final_top_binders.json
 
+## 🐳 Docker Support
+
+This repository includes Docker support for reproducible environments.
+
+### Build and Run the Docker Image
+
+1. Build the Docker image:
+   ```bash
+   docker build -t egfr-binder-design .
+2. Run the container:
+   ```bash
+   docker run -it --rm egfr-binder-design
+
+
 ## 📖 References
 
 - RFdiffusion: [GitHub Repository](https://github.com/google-deepmind/alphafold/tree/main)
