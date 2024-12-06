@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+# Modified by Zahra Alavi, 2024
+# Based on the original script from DeepMind's AlphaFold repository
+
 
 import os
 import numpy as np
